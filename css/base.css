@@ -1,0 +1,62 @@
+/* ==========================
+:: Template Name: Disshit Home
+:: Designer: NaeemBolchhi
+:: License: GPL-2.0 License
+:: Landing Page: https://naeembolchhi.github.io/
+:: Telegram Profile: https://t.me/NaeemBolchhi
+:: Description: Made for the homepage of Disshit.
+:: Version: v1.0
+:: Created: 15/07/2021
+========================== */
+
+/* --------------------------
+:: Fonts
+-------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+/* --------------------------
+:: General
+-------------------------- */
+html {
+    height: 100%;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1em;
+}
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: #0d0801;
+    text-style: sans-serif;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content {
+	background: #1a1002;
+	border-radius: 15px;
+	box-shadow: 0 0 20px #000;
+    padding: 15px;
+    width: 90%;
+	height: 90%;
+    margin: 5px;
+    line-height: 1.5;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+i {
+    font-style: normal;
+}
+a {
+    color: #f33;
+    text-decoration: none;
+}
+a:hover {
+    color: #b33;
+}
