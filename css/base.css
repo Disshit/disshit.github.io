@@ -1,6 +1,6 @@
 /* ==========================
 :: Template Name: Disshit Home
-:: Designer: NaeemBolchhi
+:: Author: NaeemBolchhi
 :: License: GPL-2.0 License
 :: Landing Page: https://naeembolchhi.github.io/
 :: Telegram Profile: https://t.me/NaeemBolchhi
@@ -27,7 +27,6 @@ body {
     padding: 0;
     margin: 0;
     background: url(../img/bg-pattern.png) repeat, #161616;
-    text-style: sans-serif;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -47,9 +46,9 @@ body {
 	max-width: 450px;
     margin: 5px;
     line-height: 1.5;
-    color: white;
+    color: #eeeeee;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1em;
     text-align: center;
 }
 i {
@@ -61,4 +60,19 @@ a {
 }
 a:hover {
     color: #b33;
+}
+
+/* --------------------------
+:: Special
+-------------------------- */
+.gradient {
+	font-size: 1em;
+    background-color: #ec9918;
+    background: linear-gradient(to bottom right, #f2d130, #e55f00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
