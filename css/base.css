@@ -1,7 +1,7 @@
 /* ==========================
 :: Template Name: Disshit Home
 :: Author: NaeemBolchhi
-:: License: GPL-2.0 License
+:: License: GPL-3.0 License
 :: Landing Page: https://naeembolchhi.github.io/
 :: Telegram Profile: https://t.me/NaeemBolchhi
 :: Description: Made for the homepage of Disshit.
@@ -17,56 +17,72 @@
 /* --------------------------
 :: General
 -------------------------- */
+/* i {font-style: normal;} */
+* {
+    scrollbar-width: thin !important;
+    scrollbar-color: #000000ff #96969600 !important;
+}
+::selection {
+  color: #161616;
+  background: #eeeeee;
+}
 html {
     height: 100%;
     font-family: "Ubuntu", sans-serif;
     font-size: 1em;
+    line-height: 1;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 body {
+    background: url(../img/bg-pattern.png) repeat, #161616;
     height: 100%;
     padding: 0;
     margin: 0;
-    background: url(../img/bg-pattern.png) repeat, #161616;
+}
+a {
+    color: #f33;
+    text-decoration: none;
+}
+a:hover {color: #b33;}
+.select {
+    -o-user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    user-select: text;
+}
+.full {
+
+}
+.flex {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
+.flex-center {justify-content: center;}
+.flex-spaced {justify-content: space-between;}
+.flex-column {flex-direction: column;}
 .container {
-	background: #1c1c1cc1;
-	border: 2px solid #282828;
-	border-radius: 15px;
-	box-shadow: 0 0 20px #0008;
+    background: #1c1c1cc1;
+    border: 2px solid #282828;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #0008;
     padding: 15px;
     width: 85%;
-	height: 85%;
-	max-width: 450px;
+    height: 85%;
+    max-width: 450px;
     margin: 5px;
-    line-height: 1.5;
+    line-height: 1;
     color: #eeeeee;
-    font-weight: bold;
-    font-size: 1em;
     text-align: center;
 }
-i {
-    font-style: normal;
-}
-a {
-    color: #f33;
-    text-decoration: none;
-}
-a:hover {
-    color: #b33;
-}
-
-/* --------------------------
-:: Special
--------------------------- */
 .gradient {
-	font-size: 1em;
+    font-size: 1em;
     background-color: #ec9918;
     background: linear-gradient(to bottom right, #f2d130, #e55f00);
     background-clip: text;
@@ -76,3 +92,22 @@ a:hover {
     -webkit-text-fill-color: transparent;
     display: inline-block;
 }
+.pointer {cursor: pointer;}
+.disclaimer {font-size: 0.7em;}
+.logo {font-size: 2.5em;}
+.buttons {font-size: 3.5em;}
+.margin {margin: 20px 30px;}
+.absolute {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+#bottom {
+	z-index: 1;
+}
+#top {
+	z-index: 2;
+}
+.info {font-size: 1em;}

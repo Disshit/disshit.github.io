@@ -7,10 +7,39 @@
 <meta name="theme-color" content="#0d0801" />
 <link rel="icon" type="image/png" sizes="32x32" href="img/disshit-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="img/disshit-16.png">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/base.css">
-<script type="text/javascript" src="js/base.js"></script>
+<link rel="stylesheet" type="text/css" href="css/disfont.css">
 </head>
 <body>
-<span class="container">Content Here.</span>
+<div id="bottom" style="display: flex;" class="absolute flex flex-center">
+    <div class="container flex flex-spaced flex-column">
+        <span id="logo-1" onclick="layerSwitch()" class="logo pointer"><i class="df df-disshit"></i></span>
+        <div class="flex flex-spaced">
+			<span class="flex flex-spaced flex-column buttons">
+				<i title="Link" class="df df-link margin pointer"></i>
+				<i title="Direct Download" class="df df-download margin pointer"></i>
+			</span>
+			<span class="flex flex-spaced flex-column buttons">
+				<i title="Magnet Link" class="df df-magnet margin pointer"></i>
+				<i title="Google Drive" class="df df-drive margin pointer"></i>
+			</span>
+		</div>
+        <span class="disclaimer">Disshit does not have any control over the content shared by users.</span>
+    </div>
+</div>
+<div id="top" style="display: none;" class="absolute flex flex-center">
+	<div class="container flex flex-spaced flex-column">
+		<span id="logo-2" onclick="layerSwitch()" class="logo gradient pointer"><i class="df df-disshit"></i></span>
+        <span class="info">
+			<p>Disshit is a portal that offers a simple and intuitive interface for sharing your links/files across a range of platforms. You can find the source files of the project on <a href="https://github.com/Disshit" target="_blank">Github</a>.</p>
+			<p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+			<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the <a href="https://raw.githubusercontent.com/Disshit/disshit.github.io/main/LICENSE" target="_blank">GNU General Public License</a> for more details.</p>
+		</span>
+        <span class="disclaimer">By downloading and using this program, you hereby agree that you have read, understood, and accepted the terms as stated in the License.</span>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
 </body>
 </html>
