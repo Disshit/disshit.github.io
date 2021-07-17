@@ -29,10 +29,10 @@ function layerSwitch() {
   var layer0 = document.getElementById('bottom');
   var layer1 = document.getElementById('top');
   if (layer0.style.display === "none") {
-	layer0.style.display = "flex";
-	layer1.style.display = "none";
+    layer0.style.display = "flex";
+    layer1.style.display = "none";
   } else {
-	layer1.style.display = "flex";
-	layer0.style.display = "none";
+    layer1.style.display = "flex";
+    layer0.style.display = "none";
   }
 }

@@ -105,9 +105,9 @@ a:hover {color: #b33;}
     position: absolute;
 }
 #bottom {
-	z-index: 1;
+    z-index: 1;
 }
 #top {
-	z-index: 2;
+    z-index: 2;
 }
 .info {font-size: 1em;}
