@@ -52,9 +52,6 @@ a:hover {color: #b97813;}
     -webkit-user-select: text;
     user-select: text;
 }
-.full {
-
-}
 .flex {
     display: -webkit-box;
     display: -moz-box;
@@ -105,64 +102,60 @@ a:hover {color: #b97813;}
     width: 100%;
     position: absolute;
 }
-#bottom {
-    z-index: 1;
-}
-#top {
-    z-index: 2;
-}
+#bottom {z-index: 1;}
+#top {z-index: 2;}
 .info {font-size: 1em;}
 .hidden {display: none;}
 
 /* --------------------------
-:: Forms
+:: Forge
 -------------------------- */
-input[type=text] {
+input, select {
 	height: 3em;
 	width: 100%;
-	background: #333333;
-	color: #eeeeee;
 	padding: 12px 20px;
 	margin: 8px 0;
 	box-sizing: border-box;
-	border: 2px solid #282828;
 	border-radius: 10px;
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
 	outline: none;
 }
-
-input[type=text]:focus {
+input[type=text] {
+	background: #111111;
+	color: #eeeeee;
+	border: 2px solid #282828;
+}
+select {
+	background: #333333;
+	color: #eeeeee;
+	border: 2px solid #282828;
+}
+input[type=text]:focus, select:hover {
 	border-bottom: 2px solid #ec9918;
 }
-
-.half-left {
-	height: 3em;
-    float: left;
-    width: 48%;
-	padding: 12px 20px;
-    margin-top: 6px;
+input[type=submit] {
+	background: #ec9918;
+	color: #111111;
+	font-weight: 700;
+	border: 2px solid #996210;
 }
-
-.half-right {
+input[type=submit]:hover {background: #b97813;}
+.btn {
 	height: 3em;
-    float: right;
-    width: 48%;
+    width: 49%;
 	padding: 12px 20px;
-    margin-top: 6px;
 }
-
+.btn-left {margin-right: 2%;}
+.btn-right {margin-left: 2%}
 .row {
 	height: 3em;
 	width: 100%;
+	margin-top: 12px;
 }
-
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-
-#link {
-	margin-bottom: 4em;
-}
+#link, #download, #magnet, #drive {margin-bottom: 2em;}
