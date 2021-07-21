@@ -17,7 +17,6 @@
 /* --------------------------
 :: General
 -------------------------- */
-/* i {font-style: normal;} */
 * {
     scrollbar-width: thin !important;
     scrollbar-color: #000000ff #96969600 !important;
@@ -43,10 +42,10 @@ body {
     margin: 0;
 }
 a {
-    color: #f33;
+    color: #ec9918;
     text-decoration: none;
 }
-a:hover {color: #b33;}
+a:hover {color: #b97813;}
 .select {
     -o-user-select: text;
     -moz-user-select: text;
@@ -95,7 +94,9 @@ a:hover {color: #b33;}
 .pointer {cursor: pointer;}
 .disclaimer {font-size: 0.7em;}
 .logo {font-size: 2.5em;}
-.buttons {font-size: 3.5em;}
+.df-link:hover, .df-magnet:hover, .df-drive:hover, .df-download:hover, #logo-1:hover {color: #ec9918;}
+.button {font-size: 3.5em;}
+.home {font-size: 2em;}
 .margin {margin: 20px 30px;}
 .absolute {
     top: 0;
@@ -111,3 +112,57 @@ a:hover {color: #b33;}
     z-index: 2;
 }
 .info {font-size: 1em;}
+.hidden {display: none;}
+
+/* --------------------------
+:: Forms
+-------------------------- */
+input[type=text] {
+	height: 3em;
+	width: 100%;
+	background: #333333;
+	color: #eeeeee;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 2px solid #282828;
+	border-radius: 10px;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+}
+
+input[type=text]:focus {
+	border-bottom: 2px solid #ec9918;
+}
+
+.half-left {
+	height: 3em;
+    float: left;
+    width: 48%;
+	padding: 12px 20px;
+    margin-top: 6px;
+}
+
+.half-right {
+	height: 3em;
+    float: right;
+    width: 48%;
+	padding: 12px 20px;
+    margin-top: 6px;
+}
+
+.row {
+	height: 3em;
+	width: 100%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#link {
+	margin-bottom: 4em;
+}

@@ -15,17 +15,21 @@
 <div id="bottom" style="display: flex;" class="absolute flex flex-center">
     <div class="container flex flex-spaced flex-column">
         <div id="logo-1" onclick="layerSwitch()" class="logo pointer"><i class="df df-disshit"></i></div>
-        <div class="flex flex-spaced">
-            <div class="flex flex-spaced flex-column button">
-                <i title="Link" class="df df-link margin pointer" onclick="forgeLink()"></i>
-                <i title="Direct Download" class="df df-download margin pointer" onclick="forgeDownload()"></i>
-            </div>
-            <div class="flex flex-spaced flex-column button">
-                <i title="Magnet Link" class="df df-magnet margin pointer" onclick="forgeMagnet()"></i>
-                <i title="Google Drive" class="df df-drive margin pointer" onclick="forgeDrive()"></i>
-            </div>
-        </div>
-        <div class="disclaimer">By using this program, you hereby agree that you have read, understood, and accepted the terms as stated in the <a href="https://raw.githubusercontent.com/Disshit/disshit.github.io/main/LICENSE" target="_blank">License</a>.</div>
+		<form id="link" class="flex flex-spaced flex-column" name="link" action="result.html" onsubmit="return" method="get">
+			<div class="button"><i title="Link" class="df df-link margin gradient"></i></div>
+			<div class="hidden"><input type="text" id="input-0" name="x" value="link" readonly=""></div>
+			<div><input type="text" id="input-1" name="y" placeholder="Your link here!"></div>
+			<div class="row">
+				<select id="input-2" class="half-left" name="z">
+					<option value="1">Encoded</option>
+					<option value="0">Raw</option>
+				</select>
+				<input id="submit" class="half-right" type="submit" value="Submit">
+			</div>
+		</form>
+        <div class="disclaimer">
+			<span class="home" onclick="goHome()"><i title="Link" class="df df-link margin pointer"></i><br /></span>
+			<span>By using this program, you hereby agree that you have read, understood, and accepted the terms as stated in the <a href="https://raw.githubusercontent.com/Disshit/disshit.github.io/main/LICENSE" target="_blank">License</a>.</span></div>
     </div>
 </div>
 <div id="top" style="display: none;" class="absolute flex flex-center">
@@ -35,9 +39,12 @@
             <p>Disshit is a portal that offers a simple and intuitive interface for sharing your links/files across a range of platforms. You can find the source files of the project on <a href="https://github.com/Disshit" target="_blank">Github</a>.</p>
             <p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
             <p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the <a href="https://raw.githubusercontent.com/Disshit/disshit.github.io/main/LICENSE" target="_blank">GNU General Public License</a> for more details.</p>
-			<br /><p><b><a href="https://naeembolchhi.github.io/" target="_blank">NaeemBolchhi</a> | <a href="https://github.com/NaeemBolchhi" target="_blank">Github</a></b></p>
+            <br /><p><b><a href="https://naeembolchhi.github.io/" target="_blank">NaeemBolchhi</a> | <a href="https://github.com/NaeemBolchhi" target="_blank">Github</a></b></p>
         </div>
-        <div class="disclaimer">Disshit does not have any control over the content shared by its users.</div>
+        <div class="disclaimer">
+			<span class="home" onclick="goHome()"><i title="Link" class="df df-link margin pointer"></i><br /></span>
+			<span>Disshit does not have any control over the content shared by its users. Disshit does not use any cookies and cannot log anything.</span>
+		</div>
     </div>
 </div>
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>

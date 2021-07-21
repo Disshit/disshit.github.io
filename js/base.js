@@ -4,7 +4,7 @@
 :: License: GPL-3.0 License
 :: Landing Page: https://naeembolchhi.github.io/
 :: Telegram Profile: https://t.me/NaeemBolchhi
-:: Description: Contains JavaScript and JQuery for Disshit.
+:: Description: Contains JavaScript for Disshit.
 :: Version: v1.0
 :: Created: 16/07/2021
 ========================== */
@@ -36,3 +36,12 @@ function layerSwitch() {
     layer0.style.display = "none";
   }
 }
+
+// Forge Redirecting
+function forgeLink() {window.location = "forge.html?x=link"}
+function forgeDownload() {window.location = "forge.html?x=download"}
+function forgeMagnet() {window.location = "forge.html?x=magnet"}
+function forgeDrive() {window.location = "forge.html?x=drive"}
+
+// Home Redirecting
+function goHome() {window.location = "/"}
