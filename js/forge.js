@@ -10,7 +10,7 @@
 ========================== */
 
 // Setting Variables
-let type = getUrlVars().x;
+var type = getUrlVars().x;
 var ds0 = document.getElementById('default');
 var ds1 = document.getElementById('link');
 var ds2 = document.getElementById('download');

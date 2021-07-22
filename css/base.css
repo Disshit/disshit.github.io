@@ -112,47 +112,47 @@ a:hover {color: #b97813;}
 :: Forge and Take
 -------------------------- */
 input, select, textarea, .alpha, .beta {
-	height: 3em;
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	box-sizing: border-box;
-	border-radius: 10px;
-	-webkit-transition: 0.5s;
-	transition: 0.5s;
-	outline: none;
+    height: 3em;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
 }
 input[type=text], textarea {
-	background: #111111;
-	color: #eeeeee;
-	border: 2px solid #282828;
+    background: #111111;
+    color: #eeeeee;
+    border: 2px solid #282828;
 }
 select, .beta {
-	background: #333333;
-	color: #eeeeee;
-	border: 2px solid #282828;
+    background: #333333;
+    color: #eeeeee;
+    border: 2px solid #282828;
 }
 input[type=text]:focus, select:hover, textarea:focus, .gamma:hover {
-	border-bottom: 2px solid #ec9918;
+    border-bottom: 2px solid #ec9918;
 }
 input[type=submit], .alpha {
-	background: #ec9918;
-	color: #111111;
-	font-weight: 700;
-	border: 2px solid #996210;
+    background: #ec9918;
+    color: #111111;
+    font-weight: 700;
+    border: 2px solid #996210;
 }
 input[type=submit]:hover, .alpha:hover {background: #b97813;}
 .btn {
-	height: 3em;
+    height: 3em;
     width: 49%;
-	padding: 12px 20px;
+    padding: 12px 20px;
 }
 .btn-left {margin-right: 2%;}
 .btn-right {margin-left: 2%}
 .row {
-	height: 3em;
-	width: 100%;
-	margin-top: 12px;
+    height: 3em;
+    width: 100%;
+    margin-top: 12px;
 }
 .row:after {
     content: "";
@@ -160,30 +160,30 @@ input[type=submit]:hover, .alpha:hover {background: #b97813;}
     clear: both;
 }
 textarea {
-	resize: none;
-	word-break: keep-all;
-	overflow: hidden !important;
-	white-space: nowrap;
+    resize: none;
+    word-break: keep-all;
+    overflow: hidden !important;
+    white-space: nowrap;
 }
 .omega {
-	color: #ec9918;
-	font-weight: 700;
+    color: #ec9918;
+    font-weight: 700;
 }
 .eternity {
-	font-size: 5em;
-	height: 1.5em;
-	width: 1.5em;
-	/* padding: 8px 8px; */
-	margin: 8px 0;
-	box-sizing: border-box;
-	border-radius: 15px;
-	-webkit-transition: 0.5s;
-	transition: 0.5s;
-	outline: none;
-	background: #11111166;
-	color: #eeeeee;
-	border: 2px solid #282828;
+    font-size: 5em;
+    height: 1.5em;
+    width: 1.5em;
+    /* padding: 8px 8px; */
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 15px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    background: #11111166;
+    color: #eeeeee;
+    border: 2px solid #282828;
 }
 .eternity:hover {
-	border: 2px solid #ec9918;
+    border: 2px solid #ec9918;
 }

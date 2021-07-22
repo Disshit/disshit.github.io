@@ -34,18 +34,18 @@ function decodeDisshit(str) {
 }
 
 // Layer Switching
-let title = document.title;
+var title = document.title;
 function layerSwitch() {
   var layer0 = document.getElementById('bottom');
   var layer1 = document.getElementById('top');
   if (layer0.style.display === "none") {
     layer0.style.display = "flex";
     layer1.style.display = "none";
-	document.title = title;
+    document.title = title;
   } else {
     layer1.style.display = "flex";
     layer0.style.display = "none";
-	document.title = "About Disshit";
+    document.title = "About Disshit";
   }
 }
 

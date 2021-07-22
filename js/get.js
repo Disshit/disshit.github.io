@@ -10,10 +10,10 @@
 ========================== */
 
 // Setting Variables
-let type = getUrlVars().x;
-let info = getUrlVars().y;
-let code = getUrlVars().z;
-let site = window.location.origin;
+var type = getUrlVars().x;
+var info = getUrlVars().y;
+var code = getUrlVars().z;
+var site = window.location.origin;
 
 var ds0 = document.getElementById('default');
 var ds1 = document.getElementById('link');
@@ -23,10 +23,10 @@ var ds4 = document.getElementById('drive');
 
 // Generating Link
 if (code === "1") {
-	var getLink = decodeURIComponent(decodeDisshit(info));
+    var getLink = decodeURIComponent(decodeDisshit(info));
 }
 if (code === "0") {
-	var getLink = decodeURIComponent(info);
+    var getLink = decodeURIComponent(info);
 }
 
 // Show Link
