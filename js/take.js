@@ -60,7 +60,7 @@ function copiedText(element) {
 
 // Shortening Link
 function shortenLink() {
-    window.open("https://tiny.cc/", "_blank");
+    window.open("https://is.gd/", "_blank");
 }
 
 // Verify Values
