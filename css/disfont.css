@@ -1,11 +1,12 @@
 /* ==========================
 :: Font Name: Disfont
 :: Author: NaeemBolchhi
-:: License: GPL-3.0 License
 :: Landing Page: https://naeembolchhi.github.io/
 :: Telegram Profile: https://t.me/NaeemBolchhi
 :: Description: A fork of Font Awesome optimised and customised for Disshit.
 :: Version: v1.0
+:: License: Licensed under the GNU General Public License v2.
+:: License URL: https://www.gnu.org/licenses/gpl-2.0.html
 :: Created: 17/07/2021
 ========================== */
 
@@ -31,6 +32,7 @@ font-weight:normal;font-style:normal;}
 .df-close:before{content:"\f005"}
 .df-copy:before{content:"\f006"}
 .df-follow:before{content:"\f007"}
+.df-home:before{content:"\f008"}
 /* --------------------------
 :: Define Icons Finish
 -------------------------- */
