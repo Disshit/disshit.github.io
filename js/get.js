@@ -23,10 +23,10 @@ var ds4 = document.getElementById('drive');
 
 // Generating Link
 if (code === "1") {
-    var getLink = decodeURIComponent(decodeDisshit(info));
+    var getLink = decodeDisshit(info);
 }
 if (code === "0") {
-    var getLink = decodeURIComponent(info);
+    var getLink = info;
 }
 
 // Show Link
