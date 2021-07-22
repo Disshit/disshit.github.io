@@ -89,6 +89,7 @@ a:hover {color: #b97813;}
     display: inline-block;
 }
 .pointer {cursor: pointer;}
+.disabled {cursor: not-allowed; color: #666666!important;}
 .disclaimer {font-size: 0.7em;}
 .logo {font-size: 2.5em;}
 .df-link:hover, .df-magnet:hover, .df-drive:hover, .df-download:hover, #logo-1:hover, .home>i:hover {color: #ec9918;}
@@ -108,9 +109,9 @@ a:hover {color: #b97813;}
 .hidden {display: none;}
 
 /* --------------------------
-:: Forge
+:: Forge and Take
 -------------------------- */
-input, select {
+input, select, textarea, .alpha, .beta {
 	height: 3em;
 	width: 100%;
 	padding: 12px 20px;
@@ -121,26 +122,26 @@ input, select {
 	transition: 0.5s;
 	outline: none;
 }
-input[type=text] {
+input[type=text], textarea {
 	background: #111111;
 	color: #eeeeee;
 	border: 2px solid #282828;
 }
-select {
+select, .beta {
 	background: #333333;
 	color: #eeeeee;
 	border: 2px solid #282828;
 }
-input[type=text]:focus, select:hover {
+input[type=text]:focus, select:hover, textarea:focus, .gamma:hover {
 	border-bottom: 2px solid #ec9918;
 }
-input[type=submit] {
+input[type=submit], .alpha {
 	background: #ec9918;
 	color: #111111;
 	font-weight: 700;
 	border: 2px solid #996210;
 }
-input[type=submit]:hover {background: #b97813;}
+input[type=submit]:hover, .alpha:hover {background: #b97813;}
 .btn {
 	height: 3em;
     width: 49%;
@@ -159,3 +160,13 @@ input[type=submit]:hover {background: #b97813;}
     clear: both;
 }
 #link, #download, #magnet, #drive {margin-bottom: 2em;}
+textarea {
+	resize: none;
+	word-break: keep-all;
+	overflow: hidden !important;
+	white-space: nowrap;
+}
+.omega {
+	color: #ec9918;
+	font-weight: 700;
+}
