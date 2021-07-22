@@ -91,7 +91,7 @@ a:hover {color: #b97813;}
 .pointer {cursor: pointer;}
 .disclaimer {font-size: 0.7em;}
 .logo {font-size: 2.5em;}
-.df-link:hover, .df-magnet:hover, .df-drive:hover, .df-download:hover, #logo-1:hover {color: #ec9918;}
+.df-link:hover, .df-magnet:hover, .df-drive:hover, .df-download:hover, #logo-1:hover, .home>i:hover {color: #ec9918;}
 .button {font-size: 3.5em;}
 .home {font-size: 2em;}
 .margin {margin: 20px 30px;}
