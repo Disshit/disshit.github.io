@@ -159,7 +159,6 @@ input[type=submit]:hover, .alpha:hover {background: #b97813;}
     display: table;
     clear: both;
 }
-#link, #download, #magnet, #drive {margin-bottom: 2em;}
 textarea {
 	resize: none;
 	word-break: keep-all;
@@ -169,4 +168,22 @@ textarea {
 .omega {
 	color: #ec9918;
 	font-weight: 700;
+}
+.eternity {
+	font-size: 5em;
+	height: 1.5em;
+	width: 1.5em;
+	/* padding: 8px 8px; */
+	margin: 8px 0;
+	box-sizing: border-box;
+	border-radius: 15px;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+	background: #11111166;
+	color: #eeeeee;
+	border: 2px solid #282828;
+}
+.eternity:hover {
+	border: 2px solid #ec9918;
 }

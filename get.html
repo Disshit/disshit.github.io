@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Take Disshit</title>
+<title>Forge Disshit</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta name="theme-color" content="#161616" />
 <meta name="HandheldFriendly" content="true"/>
-<link rel="canonical" href="https://disshit.github.io/take.html">
+<link rel="canonical" href="https://disshit.github.io/forge.html">
 <link rel="stylesheet" type="text/css" href="css/base.css">
 <link rel="stylesheet" type="text/css" href="css/disfont.css">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -26,15 +26,25 @@
             <p>Do you get to the Cloud District very often? Oh, what am I saying, of course you don't.</p><br />
 			<p>Get to the <a href="/" title="Disshit">Cloud District</a>.</p>
         </div>
-		<div id="take" style="display: none;" class="flex flex-spaced flex-column">
-			<div class="button"><i title="Copy" class="df df-copy margin gradient"></i></div>
-			<div><textarea id="takeme" onclick="selectText('takeme')" readonly="">Generating link...</textarea></div>
-			<div class="row flex flex-center">
-				<span id="btn-copy" style="display: block;" class="btn btn-left alpha pointer" onclick="copyText('takeme')">Copy</span>
-				<span id="btn-copied" style="display: none;" class="btn btn-left beta gamma omega pointer" onclick="copiedText('takeme')">Copied!</span>
-				<span id="btn-shorten" style="display: block;" class="btn btn-right beta disabled">Shorten</span>
-				<span id="btn-shortened" style="display: none;" class="btn btn-right alpha pointer" onclick="shortenLink()">Shorten</span>
-			</div>
+		<div id="link" style="display: none;" class="flex flex-spaced flex-column">
+			<a href="/broken" target="_blank">
+				<div class="button eternity pointer flex flex-center"><i title="Link" class="df df-link gradient"></i></div>
+			</a>
+		</div>
+		<div id="download" style="display: none;" class="flex flex-spaced flex-column">
+			<a href="/broken" target="_blank">
+				<div class="button eternity pointer flex flex-center"><i title="Download" class="df df-download gradient"></i></div>
+			</a>
+		</div>
+		<div id="magnet" style="display: none;" class="flex flex-spaced flex-column">
+			<a href="/broken" target="_blank">
+				<div class="button eternity pointer flex flex-center"><i title="Magnet Link" class="df df-magnet gradient"></i></div>
+			</a>
+		</div>
+		<div id="drive" style="display: none;" class="flex flex-spaced flex-column">
+			<a href="/broken" target="_blank">
+				<div class="button eternity pointer flex flex-center"><i title="Google Drive" class="df df-drive gradient"></i></div>
+			</a>
 		</div>
         <div class="disclaimer">
 			<span class="home" onclick="goHome()"><i title="Home" class="df df-home margin pointer"></i><br /></span>
@@ -57,6 +67,6 @@
     </div>
 </div>
 <script type="text/javascript" src="js/base.js"></script>
-<script type="text/javascript" src="js/take.js"></script>
+<script type="text/javascript" src="js/get.js"></script>
 </body>
 </html>

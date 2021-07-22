@@ -1,0 +1,70 @@
+/* ==========================
+:: JS Name: Disshit Forge
+:: Author: NaeemBolchhi
+:: License: GPL-3.0 License
+:: Landing Page: https://naeembolchhi.github.io/
+:: Telegram Profile: https://t.me/NaeemBolchhi
+:: Description: Contains JavaScript for Disshit.
+:: Version: v1.0
+:: Created: 22/07/2021
+========================== */
+
+// Setting Variables
+let type = getUrlVars().x;
+let info = getUrlVars().y;
+let code = getUrlVars().z;
+let site = window.location.origin;
+
+var ds0 = document.getElementById('default');
+var ds1 = document.getElementById('link');
+var ds2 = document.getElementById('download');
+var ds3 = document.getElementById('magnet');
+var ds4 = document.getElementById('drive');
+
+// Generating Link
+if (code === "1") {
+	var getLink = decodeURIComponent(decodeDisshit(info));
+}
+if (code === "0") {
+	var getLink = decodeURIComponent(info);
+}
+
+// Show Link
+if (type === "lnk") {
+  ds0.style.display = "none";
+  ds1.style.display = "flex";
+  ds1.children[0].href = getLink;
+  ds2.style.display = "none";
+  ds3.style.display = "none";
+  ds4.style.display = "none";
+}
+
+// Show Download
+if (type === "dnl") {
+  ds0.style.display = "none";
+  ds1.style.display = "none";
+  ds2.style.display = "flex";
+  ds2.children[0].href = getLink;
+  ds3.style.display = "none";
+  ds4.style.display = "none";
+}
+
+// Show Magnet
+if (type === "mgn") {
+  ds0.style.display = "none";
+  ds1.style.display = "none";
+  ds2.style.display = "none";
+  ds3.style.display = "flex";
+  ds3.children[0].href = getLink;
+  ds4.style.display = "none";
+}
+
+// Show Drive
+if (type === "drv") {
+  ds0.style.display = "none";
+  ds1.style.display = "none";
+  ds2.style.display = "none";
+  ds3.style.display = "none";
+  ds4.style.display = "flex";
+  ds4.children[0].href = getLink;
+}
