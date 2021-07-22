@@ -12,17 +12,17 @@
 // Setting Variables
 let type = getUrlVars().x;
 if (type === "lnk") {
-  let info = getUrlVars().y;
+  var info = getUrlVars().y;
 }
 if (type === "dnl") {
-  let info = getUrlVars().y;
+  var info = getUrlVars().y;
 }
 if (type === "mgn") {
   var temp = 'magnet:?xt=urn:btih:' + getUrlVars().y;
-  let info = temp.replace("magnet:?xt=urn:btih:magnet:?xt=urn:btih:", "magnet:?xt=urn:btih:");
+  var info = temp.replace("magnet:?xt=urn:btih:magnet:?xt=urn:btih:", "magnet:?xt=urn:btih:");
 }
 if (type === "drv") {
-  let info = 'https://drive.google.com/u/0/uc?id=' + getUrlVars().y '&export=download';
+  var info = 'https://drive.google.com/u/0/uc?id=' + getUrlVars().y '&export=download';
 }
 let code = getUrlVars().z;
 let site = window.location.origin;
