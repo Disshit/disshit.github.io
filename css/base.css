@@ -44,13 +44,15 @@ body {
 a {
     color: #ec9918;
     text-decoration: none;
+}
+a:hover {color: #b97813;}
+.zero, a {
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
 }
-a:hover {color: #b97813;}
 .select {
     -o-user-select: text;
     -moz-user-select: text;
