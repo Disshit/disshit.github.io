@@ -30,12 +30,9 @@ html {
     font-family: "Ubuntu", sans-serif;
     font-size: 1em;
     line-height: 1;
-    -o-user-select: none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    -khtml-user-select: none;
     -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
 }
 body {
@@ -47,7 +44,11 @@ body {
 a {
     color: #ec9918;
     text-decoration: none;
-	-webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 a:hover {color: #b97813;}
 .select {
