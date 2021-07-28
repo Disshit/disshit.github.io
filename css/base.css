@@ -116,7 +116,7 @@ a:hover {color: #b97813;}
 .hidden {display: none;}
 
 /* --------------------------
-:: Forge and Take
+:: Forge, Take, and Get
 -------------------------- */
 input, select, textarea, .alpha, .beta {
     height: 3em;
@@ -180,7 +180,6 @@ textarea {
     font-size: 5em;
     height: 1.5em;
     width: 1.5em;
-    /* padding: 8px 8px; */
     margin: 8px 0;
     box-sizing: border-box;
     border-radius: 15px;
@@ -193,4 +192,10 @@ textarea {
 }
 .eternity:hover {
     border: 2px solid #ec9918;
+}
+.spread {
+	width: 100%;
+}
+.stay {
+	width: 70% !important;
 }
