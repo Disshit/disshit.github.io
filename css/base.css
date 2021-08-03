@@ -44,6 +44,7 @@ body {
 a {
     color: #ec9918;
     text-decoration: none;
+	outline: none;
 }
 a:hover {color: #b97813;}
 .zero, a {
