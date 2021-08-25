@@ -53,8 +53,7 @@ function copyText(element) {
 
 // Shortening Link
 async function shortenLink() {
-	var tempLink = document.getElementById('takeme').innerHTML;
-	let url = 'https://is.gd/create.php?format=json&url=' + tempLink;
+	let url = 'https://is.gd/create.php?format=json&url=' + encodeURIComponent(takeLink);
 	let response = await fetch(url);
 	let shortMe = await response.json();
 	document.getElementById('takeme').innerHTML = shortMe.shorturl;
