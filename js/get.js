@@ -1,5 +1,5 @@
 /* ==========================
-:: JS Name: Disshit Forge
+:: JS Name: Disshit Get
 :: Author: NaeemBolchhi
 :: License: GPL-3.0 License
 :: Landing Page: https://naeembolchhi.github.io/
