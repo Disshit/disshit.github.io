@@ -53,14 +53,14 @@ function copyText(element) {
 
 // Shortening Link
 async function shortenLink() {
-	let url = 'https://is.gd/create.php?format=json&url=' + encodeURIComponent(takeLink);
-	let response = await fetch(url);
-	let shortMe = await response.json();
-	document.getElementById('takeme').innerHTML = shortMe.shorturl;
+    let url = 'https://is.gd/create.php?format=json&url=' + encodeURIComponent(takeLink);
+    let response = await fetch(url);
+    let shortMe = await response.json();
+    document.getElementById('takeme').innerHTML = shortMe.shorturl;
     document.getElementById('btn-shorten').style.display = "none";
     document.getElementById('btn-shortened').style.display = "block";
-	document.getElementById('btn-copy').classList = "btn btn-right alpha pointer";
-	document.getElementById('btn-copy').innerHTML = "Copy";
+    document.getElementById('btn-copy').classList = "btn btn-right alpha pointer";
+    document.getElementById('btn-copy').innerHTML = "Copy";
 }
 
 // Verify Values
