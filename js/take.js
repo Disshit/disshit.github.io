@@ -48,19 +48,20 @@ function selectText(element) {
 function copyText(element) {
     document.getElementById(element).select();
     document.execCommand("copy");
-    document.getElementById('btn-copy').innerHTML = "Copied!";
+    document.getElementById('btn-copy').style.display = "none";
+    document.getElementById('btn-copied').style.display = "block";
+    document.getElementById('btn-shorten').style.display = "none";
+    document.getElementById('btn-shortened').style.display = "block";
+}
+function copiedText(element) {
+    document.getElementById(element).select();
+    document.execCommand("copy");
 }
 
 // Shortening Link
-async function shortenLink() {
-    let url = 'https://v.gd/create.php?format=json&url=' + encodeURIComponent(takeLink);
-    let response = await fetch(url);
-    let shortMe = await response.json();
-    document.getElementById('takeme').innerHTML = shortMe.shorturl;
-    document.getElementById('btn-shorten').style.display = "none";
-    document.getElementById('btn-shortened').style.display = "block";
-    document.getElementById('btn-copy').classList = "btn btn-right alpha pointer";
-    document.getElementById('btn-copy').innerHTML = "Copy";
+function shortenLink() {
+    /* window.open("https://is.gd/", "_blank"); */
+	window.open("https://tiny.cc/", "_blank");
 }
 
 // Verify Values
