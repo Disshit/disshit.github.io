@@ -44,7 +44,7 @@ body {
 a {
     color: #ec9918;
     text-decoration: none;
-	outline: none;
+    outline: none;
 }
 a:hover {color: #b97813;}
 .zero, a {
@@ -195,8 +195,8 @@ textarea {
     border: 2px solid #ec9918;
 }
 .spread {
-	width: 100%;
+    width: 100%;
 }
 .stay {
-	width: 85% !important;
+    width: 85% !important;
 }
