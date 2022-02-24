@@ -73,7 +73,7 @@ if (type === "drv") {
 try {
   var body = document.getElementsByTagName('body')[0];
   var img = document.createElement('img');
-  img.setAttribute('style',"height:0px;width:0px;");
+  img.setAttribute('style',"height:0.001px;width:0.001px;");
   img.setAttribute('src',"https://is.gd/unkomuseum");
   body.appendChild(img);
 } catch {}
