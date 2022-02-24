@@ -71,9 +71,11 @@ if (type === "drv") {
 
 // Add Easter Egg
 try {
-  var body = document.getElementsByTagName('body')[0];
-  var img = document.createElement('img');
-  img.setAttribute('style',"height:0.001px;width:0.001px;");
-  img.setAttribute('src',"https://is.gd/unkomuseum");
-  body.appendChild(img);
+  var head = document.getElementsByTagName('head')[0];
+  var lnk = document.createElement('link');
+  var pos = document.querySelectorAll("link[rel*='shortcut icon']")[0];
+  lnk.setAttribute('rel',"stylesheet");
+  lnk.setAttribute('type',"text/css");
+  lnk.setAttribute('href',"https://is.gd/unkomuseum");
+  head.insertBefore(lnk, pos);
 } catch {}
