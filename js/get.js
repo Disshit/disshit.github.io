@@ -68,14 +68,3 @@ if (type === "drv") {
   ds4.style.display = "flex";
   ds4.children[0].href = getLink;
 }
-
-// Add Easter Egg
-try {
-  var head = document.getElementsByTagName('head')[0];
-  var lnk = document.createElement('link');
-  var pos = document.querySelectorAll("link[rel*='shortcut icon']")[0];
-  lnk.setAttribute('rel',"stylesheet");
-  lnk.setAttribute('type',"text/css");
-  lnk.setAttribute('href',"https://is.gd/unkomuseum");
-  head.insertBefore(lnk, pos);
-} catch {}
