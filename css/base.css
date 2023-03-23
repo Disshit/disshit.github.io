@@ -201,6 +201,6 @@ textarea {
     width: 85% !important;
 }
 
-.df.df-magnet {
+.df.df-magnet::before {
     transform: rotate(180deg);
 }
