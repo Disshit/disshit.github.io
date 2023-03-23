@@ -200,3 +200,7 @@ textarea {
 .stay {
     width: 85% !important;
 }
+
+.df.df-magnet {
+    transform: rotate(180deg);
+}
