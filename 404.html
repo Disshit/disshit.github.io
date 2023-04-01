@@ -18,9 +18,11 @@
 <meta property="og:image:alt" content="Disshit is a logo!">
 <meta property="og:description" content="Disshit is a portal that offers a simple and intuitive interface for sharing your links/files across a range of platforms without facing blocks." />
 <link rel="canonical" href="https://disshit.github.io/404.html">
-<link rel="stylesheet" type="text/css" href="css/base.css">
-<link rel="stylesheet" type="text/css" href="css/disfont.css">
-<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/base.min.css">
+<link rel="stylesheet" type="text/css" href="css/disfont.min.css">
+<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+<style id="gradientAnimation" type="text/css">:root{--gradient-angle:0deg;}</style>
+<script type="text/javascript" src="js/gradient.min.js"></script>
 <link rel="shortcut icon" type="image/png" sizes="32x32" href="img/disshit-32.png">
 <link rel="shortcut icon" type="image/png" sizes="16x16" href="img/disshit-16.png">
 <link rel="apple-touch-icon" sizes="60x60" href="img/disshit-60.png"/>
@@ -31,7 +33,7 @@
 </head>
 <body>
 <div id="bottom" style="display: flex;" class="absolute flex flex-center">
-    <div class="container flex flex-spaced flex-column">
+    <div class="container flex flex-spaced flex-column glow">
         <div id="logo-1" onclick="layerSwitch()" class="logo pointer zero"><i class="df df-disshit"></i></div>
         <div id="default" style="display: block;" class="info">
             <p>Do you get to the Cloud District very often? Oh, what am I saying, of course you don't.</p><br />
@@ -43,7 +45,7 @@
     </div>
 </div>
 <div id="top" style="display: none;" class="absolute flex flex-center">
-    <div class="container flex flex-spaced flex-column">
+    <div class="container flex flex-spaced flex-column glow">
         <div id="logo-2" onclick="layerSwitch()" class="logo pointer zero"><i class="df df-disshit gradient"></i></div>
         <div class="info">
             <p>Disshit is a portal that offers a simple and intuitive interface for sharing your links/files across a range of platforms. You can find the source files of the project on <a href="https://github.com/Disshit" target="_blank">Github</a>.</p>
@@ -57,6 +59,6 @@
         </div>
     </div>
 </div>
-<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/base.min.js"></script>
 </body>
 </html>

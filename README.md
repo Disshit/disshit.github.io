@@ -1,2 +1,2 @@
 # Disshit
-A collection of web shortcuts to make my life easier.
+Disshit is a simple tool for bypassing restrictions of link-sharing on various websites, including social media platforms like Facebook and Twitter. With Disshit, you can share any website, torrent, or download link with others without being blocked. No more spaces in URLs. Disshit makes your banned links clickable.
